@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AeroPods Max — Hear Everything. Miss Nothing.</title>
+
+  <!-- Google Fonts: 'Unbounded' for bold display headlines, 'Manrope' for clean readable body text -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;600;700;800&family=Manrope:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ============================= -->
+  <!-- STICKY NAVIGATION BAR         -->
+  <!-- ============================= -->
+  <header class="site-header">
+    <nav class="navbar" aria-label="Primary navigation">
+      <a href="#" class="logo" aria-label="AeroPods Max home">
+        <span class="logo-mark" aria-hidden="true"></span>
+        AeroPods<span class="logo-accent">Max</span>
+      </a>
+
+      <!-- Hidden checkbox hack for a CSS-only mobile menu toggle (no JS) -->
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+      <label for="nav-toggle" class="nav-toggle-label" aria-label="Toggle menu">
+        <span></span>
+      </label>
+
+      <ul class="nav-links">
+        <li><a href="#features">Features</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#footer">Support</a></li>
+      </ul>
+
+      <a href="#pricing" class="btn btn-nav">Buy Now</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ============================= -->
+    <!-- HERO SECTION                  -->
+    <!-- ============================= -->
+    <section class="hero">
+      <div class="hero-content">
+        <p class="eyebrow">Introducing the third generation</p>
+        <h1>Silence the noise.<br />Amplify the moment.</h1>
+        <p class="hero-subheader">
+          AeroPods Max pairs adaptive spatial audio with 40 hours of battery
+          life inside a machined aluminum shell built to disappear on your
+          head and never in your bag.
+        </p>
+        <div class="hero-actions">
+          <a href="#pricing" class="btn btn-primary">Get Started</a>
+          <a href="#features" class="btn btn-ghost">Explore Features</a>
+        </div>
+
+        <ul class="hero-stats">
+          <li><strong>40hr</strong><span>Battery life</span></li>
+          <li><strong>−32dB</strong><span>Noise cancelling</span></li>
+          <li><strong>4.9★</strong><span>12k+ reviews</span></li>
+        </ul>
+      </div>
+
+      <div class="hero-visual">
+        <!-- Product image placeholder -->
+        <div class="product-placeholder" role="img" aria-label="AeroPods Max product photo placeholder">
+          <div class="product-glow" aria-hidden="true"></div>
+          <span>Product Image<br />1200 × 1200</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================= -->
+    <!-- FEATURES GRID (3 columns)     -->
+    <!-- ============================= -->
+    <section class="features" id="features">
+      <div class="section-heading">
+        <p class="eyebrow">Engineered for obsession</p>
+        <h2>Every detail, deliberate.</h2>
+      </div>
+
+      <div class="features-grid">
+        <article class="feature-card">
+          <div class="feature-icon" aria-hidden="true">
+            <!-- icon placeholder -->
+            <span>◐</span>
+          </div>
+          <h3>Adaptive ANC</h3>
+          <p>
+            Real-time environmental scanning cancels up to 32dB of ambient
+            noise, recalculating 200 times per second.
+          </p>
+        </article>
+
+        <article class="feature-card">
+          <div class="feature-icon" aria-hidden="true">
+            <span>⏻</span>
+          </div>
+          <h3>40-Hour Battery</h3>
+          <p>
+            A single charge carries you through a full week of commutes.
+            10 minutes in the case buys 5 hours of playback.
+          </p>
+        </article>
+
+        <article class="feature-card">
+          <div class="feature-icon" aria-hidden="true">
+            <span>◆</span>
+          </div>
+          <h3>Aerospace Shell</h3>
+          <p>
+            CNC-machined aluminum and a memory-foam headband engineered to
+            feel weightless after hours of wear.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============================= -->
+    <!-- PRICING SECTION (3 cards)     -->
+    <!-- ============================= -->
+    <section class="pricing" id="pricing">
+      <div class="section-heading">
+        <p class="eyebrow">Simple pricing</p>
+        <h2>Choose your AeroPods Max.</h2>
+      </div>
+
+      <div class="pricing-grid">
+
+        <!-- Standard Tier -->
+        <article class="price-card">
+          <h3>Standard</h3>
+          <p class="price-tagline">Everyday sound, refined.</p>
+          <p class="price"><span class="currency">$</span>249</p>
+          <ul class="price-features">
+            <li>Adaptive ANC</li>
+            <li>24-hour battery</li>
+            <li>Aluminum shell</li>
+            <li>1-year warranty</li>
+          </ul>
+          <a href="#" class="btn btn-outline">Select Standard</a>
+        </article>
+
+        <!-- Pro Tier — highlighted as Most Popular -->
+        <article class="price-card price-card--featured">
+          <p class="badge">Most Popular</p>
+          <h3>Pro</h3>
+          <p class="price-tagline">Our best-selling configuration.</p>
+          <p class="price"><span class="currency">$</span>349</p>
+          <ul class="price-features">
+            <li>Adaptive ANC + Transparency</li>
+            <li>40-hour battery</li>
+            <li>Aerospace-grade aluminum shell</li>
+            <li>Spatial audio</li>
+            <li>2-year warranty</li>
+          </ul>
+          <a href="#" class="btn btn-primary">Select Pro</a>
+        </article>
+
+        <!-- Enterprise Tier -->
+        <article class="price-card">
+          <h3>Enterprise</h3>
+          <p class="price-tagline">Fleet-ready for teams.</p>
+          <p class="price"><span class="currency">$</span>299</p>
+          <ul class="price-features">
+            <li>Adaptive ANC</li>
+            <li>40-hour battery</li>
+            <li>Bulk device management</li>
+            <li>Priority support, 3-year warranty</li>
+          </ul>
+          <a href="#" class="btn btn-outline">Select Enterprise</a>
+        </article>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- ============================= -->
+  <!-- FOOTER                        -->
+  <!-- ============================= -->
+  <footer class="site-footer" id="footer">
+    <div class="footer-inner">
+      <a href="#" class="logo footer-logo">
+        AeroPods<span class="logo-accent">Max</span>
+      </a>
+      <ul class="footer-links">
+        <li><a href="#features">Features</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#">Privacy</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <p class="footer-copy">&copy; 2026 AeroPods Max. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
